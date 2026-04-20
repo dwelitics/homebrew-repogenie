@@ -55,11 +55,11 @@ end
 class Repogenie < Formula
   desc "Per-repo Claude Code operating-system installer"
   homepage "https://github.com/dwelitics/repogenie"
-  url "https://github.com/dwelitics/repogenie/archive/refs/tags/v3.4.0.tar.gz",
+  url "https://github.com/dwelitics/repogenie/archive/refs/tags/v3.5.0.tar.gz",
       using: GitHubPrivateRepositoryReleaseDownloadStrategy
-  sha256 "79a2432abf5f9033d60798cfe1bac1e3ff2d87b37b0c9a6446c0adfe80f79108"
+  sha256 "8032bfada79d48c39f3d0b072d18d3fe8843d434fe32c6c6f14f1f3a8ad66acb"
   license "MIT"
-  version "3.4.0"
+  version "3.5.0"
 
   depends_on "bash"
 
