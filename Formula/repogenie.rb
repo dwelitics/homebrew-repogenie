@@ -55,11 +55,11 @@ end
 class Repogenie < Formula
   desc "Per-repo Claude Code operating-system installer"
   homepage "https://github.com/dwelitics/repogenie"
-  url "https://github.com/dwelitics/repogenie/archive/refs/tags/v4.0.0.tar.gz",
+  url "https://github.com/dwelitics/repogenie/archive/refs/tags/v4.1.0.tar.gz",
       using: GitHubPrivateRepositoryReleaseDownloadStrategy
-  sha256 "bf21ed38d92f3d86d3a2c41d42aa280505289b8c633961093d0cb76a93737af3"
+  sha256 "8d814548c0a34586b4d2d9cf9d547a548e37443ad149682b10295d1d533b038a"
   license "MIT"
-  version "4.0.0"
+  version "4.1.0"
 
   depends_on "bash"
 
@@ -77,6 +77,7 @@ class Repogenie < Formula
     pkgshare.install "commands"
     pkgshare.install "agents"
     pkgshare.install "templates"
+    pkgshare.install "copilot-templates" if Dir.exist?("copilot-templates")
     pkgshare.install "VERSION"
     pkgshare.install "CHANGELOG.md" if File.exist?("CHANGELOG.md")
   end
